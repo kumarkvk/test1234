@@ -1,0 +1,25 @@
+ERROR ; WHILE starting the apache.Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain for ServerName
+
+edit the httpd.conf file 
+value ServerName localhost
+
+
+Installation 
+web server binaries 	/usr/sbin/httpd
+/usr/sbin/httpd_monitor
+config files 	/etc/httpd/conf/*
+log files 	/etc/httpd/logs/*
+web server root
+(contains cgi, icons/images, and html files) 	/home/httpd/* 
+
+
+httpd service requires at least one active network connection, if it does not detect any active connection it will throw following message
+
+Starting httpd: httpd: apr_sockaddr_info_get() failed for Server
+
+httpd service try to resolve system IP with domain name. It will throw following error, If it fails to resolve.
+
+httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+
+
+http://computernetworkingnotes.com/network-administration/how-to-configure-apache-server-in-linux.html
