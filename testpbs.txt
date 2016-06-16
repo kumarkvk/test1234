@@ -1,0 +1,8 @@
+git config --global user.name "kvk"
+    7  git config --global user.email "kumar.kondepudi@gmail.com"
+    8  ls
+    9  git init
+  
+   12  ls -a
+   13  git clone https://github.com/kumarkvk/kumar_shifts.git
+   14  history
